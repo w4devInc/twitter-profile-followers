@@ -1,0 +1,101 @@
+/**
+ * Admin CSS
+ * @package WordPress
+ * @subpackage  Twitter Profile Followers
+ * @author Shazzad Hossain Khan
+ * @url https://shazzad.me
+**/
+
+
+.twpf_wrap pre{
+	overflow:auto;
+}
+.twpf_wrap pre.small{
+	font-size:12px;
+	line-height: normal;
+}
+textarea.twpf_small_text{
+	font-size:12px !important;
+	line-height: normal !important;
+}
+/* Error/Message/Note */
+.twpf_wrap div._note,
+.twpf_wrap div._error,
+.twpf_wrap div._updated,
+.twpf_wrap div._ok {
+    padding: 1px 12px;
+    margin: 5px 0 15px;
+    background-color: #fff;
+	border-left:4px solid #d1e5ee;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+.twpf_wrap div._note p,
+.twpf_wrap div._error p,
+.twpf_wrap div._updated p,
+.twpf_wrap div._ok p{
+	margin:.5em 0;
+}
+.twpf_wrap div._error {
+    border-color: #dd3d36;
+}
+.twpf_wrap div._updated,
+.twpf_wrap div._ok {
+    border-color: #7ad03a;
+}
+.notes div._error,
+.notes div._updated,
+.notes div._ok{
+	margin:0;
+}
+.notes div._note + div._note{
+	margin-top:5px;
+}
+#twpf_admin_notes._ld{
+	padding-left:30px;
+	background-position:5px center;
+	background-repeat:no-repeat;
+	background-image:url(images/spinner.gif);
+}
+
+/* Form */
+.wf{
+	color:#333;
+}
+.wf p{
+	font-style:normal;
+	font-size:inherit;
+}
+.wfft_textarea{
+	height:auto;
+}
+.twpf__ov{
+	overflow:visible;
+}
+
+
+/* Box */
+.twpf-box{
+	margin-bottom:20px;
+	border:2px solid #ddd;
+	background-color:#fff;
+}
+.twpf-box-title {
+    font-size: 1.4rem;
+    line-height: normal;
+    padding: .75rem 1.75rem;
+    padding-top: 20px;
+}
+.twpf-box-content{
+	padding:.75rem 1.75rem 1.75rem 1.75rem;
+}
+
+.twpf-admin-content{
+	overflow:hidden;
+}
+@media(min-width:768px){
+	.twpf-admin-sidebar{
+		float:right;
+		width:300px;
+		margin-left:20px;
+	}
+}
